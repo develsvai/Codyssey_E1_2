@@ -6,7 +6,7 @@
 
 - 작업 브랜치: `develop`
 - 원격 저장소: `https://github.com/develsvai/Codyssey_E1_2.git`
-- 현재 로컬 커밋 수: 12개
+- 현재 로컬 커밋 수: 14개 이상, 최신 값은 `git rev-list --count HEAD`로 확인
 - `state.json`: 실행 중 생성되는 로컬 데이터 파일이며 `.gitignore`에 포함되어 있다.
 - 기본 기능: 퀴즈 풀기, 퀴즈 추가, 목록, 최고 점수, 저장/불러오기 구현 완료
 
