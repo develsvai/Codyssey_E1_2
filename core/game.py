@@ -1,4 +1,4 @@
-from core.interfaces import StateRepository
+from core.interfaces import LoadResult, LoadStatus, StateRepository
 from core.models import GameState, Quiz
 
 
@@ -34,7 +34,12 @@ DEFAULT_QUIZZES = [
 class QuizGame:
     def __init__(self, repository: StateRepository) -> None:
         self._repository = repository
+        self._load_result = LoadResult(None, LoadStatus.MISSING)
         self._state = self._load_initial_state()
+
+    @property
+    def load_result(self) -> LoadResult:
+        return self._load_result
 
     @property
     def quizzes(self) -> list[Quiz]:
@@ -52,7 +57,11 @@ class QuizGame:
 
     def add_quiz(self, quiz: Quiz) -> None:
         self._state.quizzes.append(quiz)
-        self.save()
+        try:
+            self.save()
+        except OSError:
+            self._state.quizzes.pop()
+            raise
 
     def record_score(self, score: int) -> bool:
         if score <= self._state.best_score:
@@ -70,7 +79,7 @@ class QuizGame:
         self._repository.save(self._state)
 
     def _load_initial_state(self) -> GameState:
-        loaded_state = self._repository.load()
-        if loaded_state is not None and loaded_state.quizzes:
-            return loaded_state
+        self._load_result = self._repository.load()
+        if self._load_result.state is not None:
+            return self._load_result.state
         return GameState(quizzes=list(DEFAULT_QUIZZES), best_score=0)

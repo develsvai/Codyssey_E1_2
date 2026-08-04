@@ -5,7 +5,7 @@ from json import JSONDecodeError
 from pathlib import Path
 from typing import Any
 
-from core.interfaces import StateRepository
+from core.interfaces import LoadResult, LoadStatus, StateRepository
 from core.models import GameState, Quiz
 
 
@@ -13,15 +13,19 @@ class JsonStateRepository(StateRepository):
     def __init__(self, path: str | Path) -> None:
         self._path = Path(path)
 
-    def load(self) -> GameState | None:
+    def load(self) -> LoadResult:
         if not self._path.exists():
-            return None
+            return LoadResult(None, LoadStatus.MISSING)
 
         try:
             data = json.loads(self._path.read_text(encoding="utf-8"))
-            return self._state_from_dict(data)
-        except (OSError, JSONDecodeError, KeyError, TypeError, ValueError):
-            return None
+            return LoadResult(self._state_from_dict(data), LoadStatus.LOADED)
+        except OSError as error:
+            return LoadResult(None, LoadStatus.ERROR, str(error))
+        except JSONDecodeError as error:
+            return LoadResult(None, LoadStatus.RECOVERED, str(error))
+        except (KeyError, TypeError, ValueError) as error:
+            return LoadResult(None, LoadStatus.RECOVERED, str(error))
 
     def save(self, state: GameState) -> None:
         payload = {

@@ -1,4 +1,8 @@
+from typing import cast
+
 from core.game import QuizGame
+from core.interfaces import LoadStatus
+from core.models import Quiz
 
 
 class QuizCli:
@@ -7,7 +11,7 @@ class QuizCli:
         self._running = True
 
     def run(self) -> int:
-        print("저장된 데이터 또는 기본 퀴즈를 불러왔습니다.")
+        self._print_load_message()
         while self._running:
             self._print_menu()
             choice = self._read_menu_choice()
@@ -35,7 +39,7 @@ class QuizCli:
         if choice == 1:
             self._play_quizzes()
         elif choice == 2:
-            print("퀴즈 추가 기능은 다음 단계에서 구현합니다.")
+            self._add_quiz()
         elif choice == 3:
             self._print_quiz_titles()
         elif choice == 4:
@@ -44,6 +48,20 @@ class QuizCli:
             self._save_before_exit()
             print("프로그램을 종료합니다.")
             self._running = False
+
+    def _print_load_message(self) -> None:
+        load_result = self._game.load_result
+        if load_result.status is LoadStatus.LOADED:
+            print(
+                "저장된 데이터를 불러왔습니다. "
+                f"(퀴즈 {self._game.quiz_count()}개, 최고점수 {self._game.best_score}점)"
+            )
+        elif load_result.status is LoadStatus.MISSING:
+            print("저장 파일이 없어 기본 퀴즈로 시작합니다.")
+        elif load_result.status is LoadStatus.RECOVERED:
+            print("저장 파일이 손상되었거나 형식이 올바르지 않아 기본 퀴즈로 복구했습니다.")
+        elif load_result.status is LoadStatus.ERROR:
+            print("저장 파일을 읽는 중 오류가 발생해 기본 퀴즈로 시작합니다.")
 
     def _play_quizzes(self) -> None:
         quizzes = self._game.quizzes
@@ -85,6 +103,58 @@ class QuizCli:
         else:
             print(f"현재 최고 점수: {self._game.best_score}점")
         print("=" * 40)
+
+    def _add_quiz(self) -> None:
+        print()
+        print("새로운 퀴즈를 추가합니다.")
+
+        question = self._read_text("문제를 입력하세요: ")
+        if question is None:
+            return
+
+        choices = []
+        for index in range(1, 5):
+            choice = self._read_text(f"선택지 {index}: ")
+            if choice is None:
+                return
+            choices.append(choice)
+
+        answer = self._read_number("정답 번호 (1-4): ", 1, 4)
+        if answer is None:
+            return
+
+        quiz = Quiz(
+            question=question,
+            choices=cast(tuple[str, str, str, str], tuple(choices)),
+            answer=answer,
+        )
+
+        try:
+            self._game.add_quiz(quiz)
+        except OSError:
+            print("퀴즈 저장 중 오류가 발생했습니다. 퀴즈가 추가되지 않았습니다.")
+            return
+
+        print(f"퀴즈가 추가되었습니다. 현재 총 {self._game.quiz_count()}개입니다.")
+
+    def _read_text(self, prompt: str) -> str | None:
+        while self._running:
+            try:
+                value = input(prompt).strip()
+            except (KeyboardInterrupt, EOFError):
+                print()
+                print("입력이 중단되어 현재 상태를 저장하고 종료합니다.")
+                self._save_before_exit()
+                self._running = False
+                return None
+
+            if not value:
+                print("빈 입력입니다. 내용을 입력하세요.")
+                continue
+
+            return value
+
+        return None
 
     def _read_number(self, prompt: str, minimum: int, maximum: int) -> int | None:
         while self._running:
