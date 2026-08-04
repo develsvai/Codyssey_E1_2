@@ -1,10 +1,10 @@
 {
-  "status": "RUNNING",
+  "status": "DONE",
   "agent": "foreground",
   "mode": "foreground",
   "execution_surface": "foreground",
   "task_run_id": "task-run-20260804-125910-task-def-20260804-125907-fail-d13ab85c-c7b32404",
-  "generated_at": "2026-08-04T12:59:10+00:00",
+  "generated_at": "2026-08-04T13:02:55+00:00",
   "artifacts": [
     ".loom/tasks/task-20260804-125907-fail-0bbb142d/prompt.md",
     ".loom/tasks/task-20260804-125907-fail-0bbb142d/context.md",
