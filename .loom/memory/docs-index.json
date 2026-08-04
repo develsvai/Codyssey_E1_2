@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-04T10:46:29+00:00",
+  "docs_paths": [
+    "docs"
+  ],
+  "documents": [
+    {
+      "id": ".loom/memory/README.md",
+      "title": "Loom Memory",
+      "path": ".loom/memory/README.md",
+      "source": "memory",
+      "document_type": "memory",
+      "updated_at": "2026-08-04T15:20:04+09:00",
+      "size_bytes": 202
+    },
+    {
+      "id": ".loom/memory/audit/audit-20260804-104625-memory-proposal-created-4e0f6610.json",
+      "title": "{",
+      "path": ".loom/memory/audit/audit-20260804-104625-memory-proposal-created-4e0f6610.json",
+      "source": "memory",
+      "document_type": "memory",
+      "updated_at": "2026-08-04T19:46:25+09:00",
+      "size_bytes": 431
+    },
+    {
+      "id": ".loom/memory/categories.json",
+      "title": "{",
+      "path": ".loom/memory/categories.json",
+      "source": "memory",
+      "document_type": "memory",
+      "updated_at": "2026-08-04T15:20:04+09:00",
+      "size_bytes": 1484
+    },
+    {
+      "id": ".loom/memory/principles.md",
+      "title": "Principles",
+      "path": ".loom/memory/principles.md",
+      "source": "memory",
+      "document_type": "principles",
+      "updated_at": "2026-08-04T15:20:04+09:00",
+      "size_bytes": 82
+    },
+    {
+      "id": ".loom/memory/proposals/proposal-20260804-104625-proposal-85a42753.json",
+      "title": "{",
+      "path": ".loom/memory/proposals/proposal-20260804-104625-proposal-85a42753.json",
+      "source": "memory",
+      "document_type": "memory",
+      "updated_at": "2026-08-04T19:46:25+09:00",
+      "size_bytes": 1120
+    }
+  ],
+  "path": "/Users/hongyongjae/Desktop/Codyssey_E1_2/.loom/memory/docs-index.json"
+}
