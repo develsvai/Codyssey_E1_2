@@ -1,10 +1,10 @@
 {
-  "status": "RUNNING",
+  "status": "DONE",
   "agent": "foreground",
   "mode": "foreground",
   "execution_surface": "foreground",
   "task_run_id": "task-run-20260804-110833-task-def-20260804-104232-readme-git-workflow-dcc-067eaa1f",
-  "generated_at": "2026-08-04T11:08:33+00:00",
+  "generated_at": "2026-08-04T11:12:47+00:00",
   "artifacts": [
     ".loom/tasks/task-20260804-104232-readme-git-workflow-cc418816/prompt.md",
     ".loom/tasks/task-20260804-104232-readme-git-workflow-cc418816/context.md",
@@ -34,11 +34,7 @@
       ".loom/tasks/task-20260804-104232-readme-git-workflow-cc418816/agent-events.jsonl",
       ".loom/tasks/task-20260804-104232-readme-git-workflow-cc418816/artifacts.json"
     ],
-    "work_products": [
-      "README.md",
-      "doc/architecture.md",
-      "doc/submission-checklist.md"
-    ]
+    "work_products": []
   },
   "contract_snapshot": {
     "schema_version": 1,
