@@ -1,0 +1,15 @@
+{
+  "id": "audit-20260804-104931-active-memory-created-6efbee2d",
+  "created_at": "2026-08-04T10:49:31+00:00",
+  "event_type": "ACTIVE_MEMORY_CREATED",
+  "actor": "user",
+  "source_type": "memory_proposal",
+  "source_id": "proposal-20260804-104625-proposal-85a42753",
+  "target_type": "active_memory",
+  "target_id": "memory-20260804-104931-memory-47cda9f4",
+  "message": "설계 구조 문서를 구현 기준으로 유지",
+  "data": {
+    "memory_type": "decisions",
+    "category_key": "decision"
+  }
+}

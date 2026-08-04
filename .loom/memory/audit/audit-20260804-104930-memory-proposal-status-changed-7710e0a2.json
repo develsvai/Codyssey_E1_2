@@ -1,0 +1,15 @@
+{
+  "id": "audit-20260804-104930-memory-proposal-status-changed-7710e0a2",
+  "created_at": "2026-08-04T10:49:30+00:00",
+  "event_type": "MEMORY_PROPOSAL_STATUS_CHANGED",
+  "actor": "user",
+  "source_type": "memory_proposal",
+  "source_id": "proposal-20260804-104625-proposal-85a42753",
+  "target_type": "",
+  "target_id": "",
+  "message": "ACCEPTED",
+  "data": {
+    "status": "ACCEPTED",
+    "reason": "사용자가 보존 후보를 승인했습니다."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "memory-20260804-104931-memory-47cda9f4",
+  "memory_type": "principles",
+  "status": "ACTIVE",
+  "created_at": "2026-08-04T10:49:31+00:00",
+  "updated_at": "2026-08-04T10:49:53+00:00",
+  "title": "설계 구조 문서를 구현 기준으로 유지",
+  "body": "doc/architecture.md를 현재 core/cli 분리 설계의 기준 문서로 두고, 후속 구현 Task에서 의존 방향(cli -> core), core의 CLI 비의존성, StateRepository 저장 경계를 유지하도록 참조한다.",
+  "source_proposal_id": "proposal-20260804-104625-proposal-85a42753",
+  "source_prompt": "사용자가 현재 설계 구조를 문서로 고정하고 doc 아래 저장한 뒤 Loom proposal에도 남기라고 요청함",
+  "source_type": "task",
+  "source_ref": "task-20260804-104447-task-9a1837fe",
+  "actor": "user",
+  "resolved_at": "",
+  "superseded_by": "",
+  "archived_at": "",
+  "metadata": {
+    "suggested_type": "decision",
+    "document": "doc/architecture.md",
+    "job_id": "job-20260804-103254-python-2983ddbb"
+  },
+  "category_key": "principle"
+}

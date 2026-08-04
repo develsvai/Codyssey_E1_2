@@ -1,0 +1,17 @@
+{
+  "id": "audit-20260804-104953-active-memory-reclassified-320a5ec0",
+  "created_at": "2026-08-04T10:49:53+00:00",
+  "event_type": "ACTIVE_MEMORY_RECLASSIFIED",
+  "actor": "user",
+  "source_type": "active_memory",
+  "source_id": "memory-20260804-104931-memory-47cda9f4",
+  "target_type": "active_memory",
+  "target_id": "memory-20260804-104931-memory-47cda9f4",
+  "message": "decision -> principle",
+  "data": {
+    "previous_type": "decisions",
+    "memory_type": "principles",
+    "previous_category_key": "decision",
+    "category_key": "principle"
+  }
+}
