@@ -4,7 +4,7 @@
   "title": "제출 캡처 이미지 문서 반영",
   "description": "사용자가 추가한 제출용 캡처 이미지를 확인하고 README 또는 제출 체크리스트의 적절한 위치에 Markdown 이미지 링크로 반영한다.",
   "created_at": "2026-08-04T13:19:56+00:00",
-  "updated_at": "2026-08-04T13:20:02+00:00",
+  "updated_at": "2026-08-04T13:21:58+00:00",
   "order_index": 10,
   "legacy_task_id": "task-20260804-131956-task-40517e0b",
   "depends_on": [

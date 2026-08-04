@@ -3,9 +3,9 @@
   "job_id": "job-20260804-103254-python-2983ddbb",
   "title": "제출 캡처 이미지 문서 반영",
   "description": "사용자가 추가한 제출용 캡처 이미지를 확인하고 README 또는 제출 체크리스트의 적절한 위치에 Markdown 이미지 링크로 반영한다.",
-  "status": "RUNNING",
+  "status": "DONE",
   "created_at": "2026-08-04T13:19:56+00:00",
-  "updated_at": "2026-08-04T13:20:02+00:00",
+  "updated_at": "2026-08-04T13:21:58+00:00",
   "order_index": 10,
   "assigned_agent": "foreground",
   "depends_on": [
@@ -21,12 +21,24 @@
   "run_attempts": 0,
   "last_error": "",
   "commit_refs": [
-    "c63b702834021b43d1d621e0606327b1a03e70c9"
+    "c63b702834021b43d1d621e0606327b1a03e70c9",
+    "3a012fb2cbe0797edacb7144b3b726410e305c2f"
   ],
   "branch_name": "develop",
   "git_dirty": true,
-  "git_snapshot_captured_at": "2026-08-04T13:20:02+00:00",
-  "artifacts": [],
+  "git_snapshot_captured_at": "2026-08-04T13:21:58+00:00",
+  "artifacts": [
+    ".loom/tasks/task-20260804-131956-task-40517e0b/agent-events.jsonl",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/artifacts.json",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/context.md",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/decision.md",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/git-snapshot.json",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/logs.txt",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/previous-results.md",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/prompt.md",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/result.md",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/troubleshooting.md"
+  ],
   "source_proposal_id": "",
   "source_prompt": ""
 }
