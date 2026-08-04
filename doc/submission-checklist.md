@@ -6,7 +6,7 @@
 
 - 작업 브랜치: `develop`
 - 원격 저장소: `https://github.com/develsvai/Codyssey_E1_2.git`
-- 현재 로컬 커밋 수: 14개 이상, 최신 값은 `git rev-list --count HEAD`로 확인
+- 현재 로컬 커밋 수: 20개 이상, 최신 값은 `git rev-list --count HEAD`로 확인
 - `state.json`: 실행 중 생성되는 로컬 데이터 파일이며 `.gitignore`에 포함되어 있다.
 - 기본 기능: 퀴즈 풀기, 퀴즈 추가, 목록, 최고 점수, 저장/불러오기 구현 완료
 
@@ -22,6 +22,32 @@ git log --oneline --graph --decorate -n 20
 - 원격 저장소 업로드: 제출 전 `git push origin develop` 필요
 - 최종 제출 브랜치 병합: GitHub에서 `develop`을 `master` 또는 제출 기준 브랜치로 병합 필요
 - `clone`/`pull` 실습: 별도 디렉터리에서 수행 필요
+
+## 커밋 메시지 기준
+
+커밋은 기능 또는 문서 변경 단위로 나누고, 메시지는 변경 내용을 바로 알 수 있게 작성한다.
+
+권장 형식:
+
+```text
+Type: 변경 요약
+```
+
+사용한 타입 예시:
+
+- `Feat`: 새 기능 추가
+- `Fix`: 동작 오류 수정
+- `Docs`: README, 설계 문서, 제출 문서 변경
+- `Refactor`: 동작은 유지하면서 구조 정리
+- `Chore`: Loom 기록, 설정, 검증용 정리
+
+커밋 단위 예시:
+
+- 메뉴와 CLI 흐름 구현
+- 퀴즈 모델과 게임 규칙 구현
+- JSON 저장/불러오기 구현
+- README 실행 방법 보강
+- 제출 체크리스트 보강
 
 ## Git 기초 명령어 7종 체크
 
@@ -57,9 +83,27 @@ git push origin develop
 git pull origin develop
 ```
 
+확인할 증빙:
+
+- `git clone ...` 명령과 복제 완료 화면
+- 복제한 디렉터리에서 `git log --oneline --graph --decorate -n 10` 화면
+- 복제한 디렉터리에서 변경 커밋 후 `git push origin develop` 성공 화면
+- 기존 작업 디렉터리에서 `git pull origin develop` 성공 화면
+
+주의: 이 단계는 GitHub 인증과 실제 원격 저장소 접근이 필요하므로 사용자가 직접 수행하고 캡처한다.
+
 ## 제출 스크린샷
 
 - 개발 환경 설정: VSCode 또는 사용 IDE, `python3 --version`, `git config --list` 중 필요한 화면
 - 프로그램 실행 결과: 메뉴, 퀴즈 풀이, 퀴즈 추가, 퀴즈 목록, 최고 점수 화면
 - 데이터 유지 확인: 재실행 후 저장 데이터 로드 메시지와 추가 퀴즈 유지 화면
 - Git 이력: `git log --oneline --graph --decorate` 실행 결과
+- GitHub 증빙: 원격 저장소 URL, `develop` push 결과, 제출 기준 브랜치 병합 결과
+
+## 사용자가 직접 수행해야 하는 항목
+
+- GitHub에 현재 `develop` 브랜치 push
+- GitHub에서 `develop`을 `master` 또는 제출 기준 브랜치로 병합
+- 별도 디렉터리에서 `clone`/`pull` 실습
+- 실행 화면과 Git 이력 화면 캡처
+- 제출 페이지에 GitHub 저장소 URL 입력

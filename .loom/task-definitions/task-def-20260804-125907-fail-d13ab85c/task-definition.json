@@ -1,0 +1,26 @@
+{
+  "id": "task-def-20260804-125907-fail-d13ab85c",
+  "job_definition_id": "job-20260804-103254-python-2983ddbb",
+  "title": "평가 FAIL 항목 빠른 보강",
+  "description": "평가 결과에서 바로 보강 가능한 문서/코드 항목을 정리한다. GitHub 원격 push, merge, clone/pull 스크린샷처럼 사용자가 직접 수행해야 하는 증빙은 체크리스트로 분리한다.",
+  "created_at": "2026-08-04T12:59:07+00:00",
+  "updated_at": "2026-08-04T12:59:10+00:00",
+  "order_index": 9,
+  "legacy_task_id": "task-20260804-125907-fail-0bbb142d",
+  "depends_on": [
+    "task-def-20260804-113325-task-def-a0afaf88"
+  ],
+  "expected_output": "README.md, doc/architecture.md, doc/submission-checklist.md가 보강되고, 필요 시 main.py에 최상위 안전 종료 처리가 추가된다.",
+  "done_condition": "보강 문서와 코드 변경이 완료되고 compileall, git diff --check, loom validate --strict 검증 및 커밋, Loom 완료 기록 커밋이 완료되어 있다.",
+  "in_scope": "복구 정책, 백업 전략, 대량 데이터 한계, 커밋 메시지 규칙, Git 제출 증빙 절차, 최상위 KeyboardInterrupt 처리",
+  "out_of_scope": "GitHub push/merge 실제 수행, clone/pull 스크린샷 촬영, 보너스 기능 구현, 대규모 리팩터링",
+  "validation_hint": "python3 -m compileall . 및 git diff --check, loom validate --strict를 실행한다.",
+  "required_docs": [],
+  "memory_refs": [],
+  "default_agent": "foreground",
+  "context_policy_id": "",
+  "executor_policy_id": "",
+  "review_policy": "",
+  "source_proposal_id": "",
+  "source_prompt": ""
+}
