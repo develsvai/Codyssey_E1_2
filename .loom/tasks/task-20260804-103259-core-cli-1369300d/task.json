@@ -3,9 +3,9 @@
   "job_id": "job-20260804-103254-python-2983ddbb",
   "title": "core/cli 분리 프로젝트 구조 잡기",
   "description": "미션 요구사항을 바탕으로 core 하위에 모델, 게임 조율, 저장소 인터페이스/구현을 두고 cli 하위에 콘솔 진입 어댑터를 둔 초기 Python 구조를 만든다.",
-  "status": "RUNNING",
+  "status": "DONE",
   "created_at": "2026-08-04T10:32:59+00:00",
-  "updated_at": "2026-08-04T10:37:59+00:00",
+  "updated_at": "2026-08-04T10:41:52+00:00",
   "order_index": 1,
   "assigned_agent": "foreground",
   "depends_on": [],
@@ -19,12 +19,24 @@
   "run_attempts": 0,
   "last_error": "",
   "commit_refs": [
-    "b2784d456842a234e26b23e83cd831c3f4de6881"
+    "b2784d456842a234e26b23e83cd831c3f4de6881",
+    "3eda701ac83785be442625b9df526b965c30239a"
   ],
   "branch_name": "develop",
   "git_dirty": true,
-  "git_snapshot_captured_at": "2026-08-04T10:37:59+00:00",
-  "artifacts": [],
+  "git_snapshot_captured_at": "2026-08-04T10:41:52+00:00",
+  "artifacts": [
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/agent-events.jsonl",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/artifacts.json",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/context.md",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/decision.md",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/git-snapshot.json",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/logs.txt",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/previous-results.md",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/prompt.md",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/result.md",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/troubleshooting.md"
+  ],
   "source_proposal_id": "",
   "source_prompt": ""
 }

@@ -2,13 +2,18 @@
   "id": "job-20260804-103254-python-2983ddbb",
   "title": "Python 콘솔 퀴즈 게임 미션 구현",
   "goal": "Python 콘솔 퀴즈 게임을 core/cli 분리 구조로 구현하고 README, state.json 영속성, Git/GitHub workflow 요구사항을 충족한다.",
-  "status": "RUNNING",
+  "status": "PENDING",
   "created_at": "2026-08-04T10:32:54+00:00",
-  "updated_at": "2026-08-04T10:37:59+00:00",
+  "updated_at": "2026-08-04T10:42:32+00:00",
   "context_refs": [],
   "task_ids": [
-    "task-20260804-103259-core-cli-1369300d"
+    "task-20260804-103259-core-cli-1369300d",
+    "task-20260804-104220-task-d1fd1c68",
+    "task-20260804-104226-json-2c0b0c3b",
+    "task-20260804-104232-readme-git-workflow-cc418816"
   ],
   "branch_name": "develop",
-  "checkpoint_ids": []
+  "checkpoint_ids": [
+    "checkpoint-20260804-104152-task-completed-core-cli-91d9a5f3"
+  ]
 }

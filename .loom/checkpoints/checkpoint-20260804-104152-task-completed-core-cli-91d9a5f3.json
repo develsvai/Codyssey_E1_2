@@ -1,0 +1,19 @@
+{
+  "id": "checkpoint-20260804-104152-task-completed-core-cli-91d9a5f3",
+  "created_at": "2026-08-04T10:41:52+00:00",
+  "reason": "Task completed: core/cli 분리 프로젝트 구조 잡기",
+  "summary": "core/cli 분리 프로젝트 구조 잡기 -> DONE @ develop/3eda701ac837",
+  "job_id": "job-20260804-103254-python-2983ddbb",
+  "task_id": "task-20260804-103259-core-cli-1369300d",
+  "commit_sha": "3eda701ac83785be442625b9df526b965c30239a",
+  "branch_name": "develop",
+  "dirty": true,
+  "staged_files": [],
+  "modified_files": [
+    ".loom/job-runs/job-run-20260804-103759-job-20260804-103254-python-2983ddbb-a3a8a9ff/job-run.json",
+    ".loom/task-definitions/task-def-20260804-103259-core-cli-415c0d86/task-definition.json"
+  ],
+  "untracked_files": [],
+  "snapshot_captured_at": "2026-08-04T10:41:52+00:00",
+  "rollback_strategy": "revert-or-branch"
+}

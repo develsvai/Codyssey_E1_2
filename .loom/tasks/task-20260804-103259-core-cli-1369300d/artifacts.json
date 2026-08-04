@@ -1,10 +1,10 @@
 {
-  "status": "RUNNING",
+  "status": "DONE",
   "agent": "foreground",
   "mode": "foreground",
   "execution_surface": "foreground",
   "task_run_id": "task-run-20260804-103759-task-def-20260804-103259-core-cli-415c0d86-3c90baf4",
-  "generated_at": "2026-08-04T10:37:59+00:00",
+  "generated_at": "2026-08-04T10:41:52+00:00",
   "artifacts": [
     ".loom/tasks/task-20260804-103259-core-cli-1369300d/prompt.md",
     ".loom/tasks/task-20260804-103259-core-cli-1369300d/context.md",
@@ -34,18 +34,7 @@
       ".loom/tasks/task-20260804-103259-core-cli-1369300d/agent-events.jsonl",
       ".loom/tasks/task-20260804-103259-core-cli-1369300d/artifacts.json"
     ],
-    "work_products": [
-      "main.py",
-      "core/__init__.py",
-      "core/interfaces.py",
-      "core/models.py",
-      "core/game.py",
-      "core/storage.py",
-      "cli/__init__.py",
-      "cli/app.py",
-      ".gitignore",
-      "README.md"
-    ]
+    "work_products": []
   },
   "contract_snapshot": {
     "schema_version": 1,
