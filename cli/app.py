@@ -29,34 +29,11 @@ class QuizCli:
         print("=" * 40)
 
     def _read_menu_choice(self) -> int | None:
-        try:
-            raw_value = input("선택: ").strip()
-        except (KeyboardInterrupt, EOFError):
-            print()
-            print("입력이 중단되어 현재 상태를 저장하고 종료합니다.")
-            self._save_before_exit()
-            self._running = False
-            return None
-
-        if not raw_value:
-            print("빈 입력입니다. 1-5 사이의 숫자를 입력하세요.")
-            return None
-
-        try:
-            choice = int(raw_value)
-        except ValueError:
-            print("잘못된 입력입니다. 1-5 사이의 숫자를 입력하세요.")
-            return None
-
-        if choice not in range(1, 6):
-            print("범위 밖 입력입니다. 1-5 사이의 숫자를 입력하세요.")
-            return None
-
-        return choice
+        return self._read_number("선택: ", 1, 5)
 
     def _handle_choice(self, choice: int) -> None:
         if choice == 1:
-            print("퀴즈 풀기 기능은 다음 단계에서 구현합니다.")
+            self._play_quizzes()
         elif choice == 2:
             print("퀴즈 추가 기능은 다음 단계에서 구현합니다.")
         elif choice == 3:
@@ -67,6 +44,76 @@ class QuizCli:
             self._save_before_exit()
             print("프로그램을 종료합니다.")
             self._running = False
+
+    def _play_quizzes(self) -> None:
+        quizzes = self._game.quizzes
+        total_count = len(quizzes)
+        if total_count == 0:
+            print("등록된 퀴즈가 없습니다.")
+            return
+
+        print()
+        print(f"퀴즈를 시작합니다. 총 {total_count}문제입니다.")
+        correct_count = 0
+
+        for index, quiz in enumerate(quizzes, start=1):
+            print()
+            print("-" * 40)
+            print(f"[문제 {index}]")
+            print(quiz.question)
+            for choice_index, choice in enumerate(quiz.choices, start=1):
+                print(f"{choice_index}. {choice}")
+
+            answer = self._read_number("정답 입력: ", 1, 4)
+            if answer is None:
+                return
+
+            if quiz.is_correct(answer):
+                print("정답입니다!")
+                correct_count += 1
+            else:
+                print(f"오답입니다. 정답은 {quiz.answer}번입니다.")
+
+        score = self._game.calculate_score(correct_count, total_count)
+        is_new_best = self._game.record_score(score)
+
+        print()
+        print("=" * 40)
+        print(f"결과: {total_count}문제 중 {correct_count}문제 정답 ({score}점)")
+        if is_new_best:
+            print("새로운 최고 점수입니다!")
+        else:
+            print(f"현재 최고 점수: {self._game.best_score}점")
+        print("=" * 40)
+
+    def _read_number(self, prompt: str, minimum: int, maximum: int) -> int | None:
+        while self._running:
+            try:
+                raw_value = input(prompt).strip()
+            except (KeyboardInterrupt, EOFError):
+                print()
+                print("입력이 중단되어 현재 상태를 저장하고 종료합니다.")
+                self._save_before_exit()
+                self._running = False
+                return None
+
+            if not raw_value:
+                print(f"빈 입력입니다. {minimum}-{maximum} 사이의 숫자를 입력하세요.")
+                continue
+
+            try:
+                number = int(raw_value)
+            except ValueError:
+                print(f"잘못된 입력입니다. {minimum}-{maximum} 사이의 숫자를 입력하세요.")
+                continue
+
+            if number not in range(minimum, maximum + 1):
+                print(f"범위 밖 입력입니다. {minimum}-{maximum} 사이의 숫자를 입력하세요.")
+                continue
+
+            return number
+
+        return None
 
     def _print_quiz_titles(self) -> None:
         titles = self._game.quiz_titles()

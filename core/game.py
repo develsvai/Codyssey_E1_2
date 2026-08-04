@@ -61,6 +61,11 @@ class QuizGame:
         self.save()
         return True
 
+    def calculate_score(self, correct_count: int, total_count: int) -> int:
+        if total_count <= 0:
+            return 0
+        return round((correct_count / total_count) * 100)
+
     def save(self) -> None:
         self._repository.save(self._state)
 
