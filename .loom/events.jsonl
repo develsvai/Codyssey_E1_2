@@ -1,0 +1,2 @@
+{"created_at": "2026-08-04T10:32:54+00:00", "data": {}, "job_id": "job-20260804-103254-python-2983ddbb", "message": "Python 콘솔 퀴즈 게임 미션 구현", "task_id": "", "type": "JOB_CREATED"}
+{"created_at": "2026-08-04T10:32:59+00:00", "data": {}, "job_id": "job-20260804-103254-python-2983ddbb", "message": "core/cli 분리 프로젝트 구조 잡기", "task_id": "task-20260804-103259-core-cli-1369300d", "type": "TASK_CREATED"}
