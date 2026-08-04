@@ -1,0 +1,19 @@
+{
+  "before": {
+    "available": true,
+    "branch_name": "develop",
+    "commit_sha": "b2784d456842a234e26b23e83cd831c3f4de6881",
+    "dirty": true,
+    "staged_files": [],
+    "modified_files": [
+      ".loom/events.jsonl",
+      ".loom/task-definitions/task-def-20260804-103259-core-cli-415c0d86/task-definition.json"
+    ],
+    "untracked_files": [
+      ".loom/job-runs/",
+      ".loom/task-runs/"
+    ],
+    "captured_at": "2026-08-04T10:37:59+00:00"
+  },
+  "after": null
+}

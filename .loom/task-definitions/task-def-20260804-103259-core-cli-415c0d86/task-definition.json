@@ -4,7 +4,7 @@
   "title": "core/cli 분리 프로젝트 구조 잡기",
   "description": "미션 요구사항을 바탕으로 core 하위에 모델, 게임 조율, 저장소 인터페이스/구현을 두고 cli 하위에 콘솔 진입 어댑터를 둔 초기 Python 구조를 만든다.",
   "created_at": "2026-08-04T10:32:59+00:00",
-  "updated_at": "2026-08-04T10:32:59+00:00",
+  "updated_at": "2026-08-04T10:37:59+00:00",
   "order_index": 1,
   "legacy_task_id": "task-20260804-103259-core-cli-1369300d",
   "depends_on": [],
