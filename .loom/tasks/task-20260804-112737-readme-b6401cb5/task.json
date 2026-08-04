@@ -1,0 +1,32 @@
+{
+  "id": "task-20260804-112737-readme-b6401cb5",
+  "job_id": "job-20260804-103254-python-2983ddbb",
+  "title": "README 실행 방법 상세화",
+  "description": "README의 실행 방법 섹션을 초보자가 그대로 따라 실행할 수 있도록 Python 버전 확인, 프로젝트 이동, 실행 명령, 메뉴 사용 흐름, state.json 생성/재실행 확인까지 자세히 보강한다.",
+  "status": "RUNNING",
+  "created_at": "2026-08-04T11:27:37+00:00",
+  "updated_at": "2026-08-04T11:27:44+00:00",
+  "order_index": 7,
+  "assigned_agent": "foreground",
+  "depends_on": [
+    "task-20260804-111349-task-ba5a8f0b"
+  ],
+  "expected_output": "README.md의 실행 방법 섹션에 단계별 실행 절차와 메뉴 사용 예시가 포함된다.",
+  "done_condition": "README 수정, 문서 공백 검사, Loom 검증, 문서 커밋 및 Loom 완료 기록 커밋이 완료되어 있다.",
+  "in_scope": "README 실행 방법 섹션 상세화와 관련 Loom 기록",
+  "out_of_scope": "기능 코드 변경, GitHub push, clone/pull 실습, 스크린샷 촬영",
+  "validation_hint": "README 내용을 확인하고 git diff --check 및 loom validate --strict를 실행한다.",
+  "required_docs": [],
+  "memory_refs": [],
+  "run_attempts": 0,
+  "last_error": "",
+  "commit_refs": [
+    "b613d5faad13cc1237252e2f325e29de37c346c9"
+  ],
+  "branch_name": "develop",
+  "git_dirty": true,
+  "git_snapshot_captured_at": "2026-08-04T11:27:44+00:00",
+  "artifacts": [],
+  "source_proposal_id": "",
+  "source_prompt": ""
+}

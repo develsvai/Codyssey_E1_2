@@ -1,0 +1,4 @@
+[2026-08-04T11:27:44+00:00] agent=foreground task=task-20260804-112737-readme-b6401cb5 Foreground task session started.
+[2026-08-04T11:28:10+00:00] README 현재 실행 방법 섹션을 확인했다.
+[2026-08-04T11:29:00+00:00] README 실행 방법 섹션을 Python 버전 확인, 프로젝트 이동, 실행, 메뉴 사용, 저장/재실행 확인 흐름으로 상세화했다.
+[2026-08-04T11:29:30+00:00] README 내용 확인, git diff --check -- README.md, loom validate --strict를 수행했다.
