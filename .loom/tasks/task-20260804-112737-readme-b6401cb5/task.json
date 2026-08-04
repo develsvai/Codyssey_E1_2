@@ -3,9 +3,9 @@
   "job_id": "job-20260804-103254-python-2983ddbb",
   "title": "README 실행 방법 상세화",
   "description": "README의 실행 방법 섹션을 초보자가 그대로 따라 실행할 수 있도록 Python 버전 확인, 프로젝트 이동, 실행 명령, 메뉴 사용 흐름, state.json 생성/재실행 확인까지 자세히 보강한다.",
-  "status": "RUNNING",
+  "status": "DONE",
   "created_at": "2026-08-04T11:27:37+00:00",
-  "updated_at": "2026-08-04T11:27:44+00:00",
+  "updated_at": "2026-08-04T11:29:13+00:00",
   "order_index": 7,
   "assigned_agent": "foreground",
   "depends_on": [
@@ -21,12 +21,24 @@
   "run_attempts": 0,
   "last_error": "",
   "commit_refs": [
-    "b613d5faad13cc1237252e2f325e29de37c346c9"
+    "b613d5faad13cc1237252e2f325e29de37c346c9",
+    "f8c3f8cb10ce149cab2f96caa27e04f7e4c44855"
   ],
   "branch_name": "develop",
   "git_dirty": true,
-  "git_snapshot_captured_at": "2026-08-04T11:27:44+00:00",
-  "artifacts": [],
+  "git_snapshot_captured_at": "2026-08-04T11:29:13+00:00",
+  "artifacts": [
+    ".loom/tasks/task-20260804-112737-readme-b6401cb5/agent-events.jsonl",
+    ".loom/tasks/task-20260804-112737-readme-b6401cb5/artifacts.json",
+    ".loom/tasks/task-20260804-112737-readme-b6401cb5/context.md",
+    ".loom/tasks/task-20260804-112737-readme-b6401cb5/decision.md",
+    ".loom/tasks/task-20260804-112737-readme-b6401cb5/git-snapshot.json",
+    ".loom/tasks/task-20260804-112737-readme-b6401cb5/logs.txt",
+    ".loom/tasks/task-20260804-112737-readme-b6401cb5/previous-results.md",
+    ".loom/tasks/task-20260804-112737-readme-b6401cb5/prompt.md",
+    ".loom/tasks/task-20260804-112737-readme-b6401cb5/result.md",
+    ".loom/tasks/task-20260804-112737-readme-b6401cb5/troubleshooting.md"
+  ],
   "source_proposal_id": "",
   "source_prompt": ""
 }

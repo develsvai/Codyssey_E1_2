@@ -1,0 +1,19 @@
+{
+  "id": "checkpoint-20260804-112913-task-completed-readme-4e43108f",
+  "created_at": "2026-08-04T11:29:13+00:00",
+  "reason": "Task completed: README 실행 방법 상세화",
+  "summary": "README 실행 방법 상세화 -> DONE @ develop/f8c3f8cb10ce",
+  "job_id": "job-20260804-103254-python-2983ddbb",
+  "task_id": "task-20260804-112737-readme-b6401cb5",
+  "commit_sha": "f8c3f8cb10ce149cab2f96caa27e04f7e4c44855",
+  "branch_name": "develop",
+  "dirty": true,
+  "staged_files": [],
+  "modified_files": [
+    ".loom/job-runs/job-run-20260804-112744-job-20260804-103254-python-2983ddbb-5cb822f6/job-run.json",
+    ".loom/task-definitions/task-def-20260804-112737-readme-86778381/task-definition.json"
+  ],
+  "untracked_files": [],
+  "snapshot_captured_at": "2026-08-04T11:29:13+00:00",
+  "rollback_strategy": "revert-or-branch"
+}

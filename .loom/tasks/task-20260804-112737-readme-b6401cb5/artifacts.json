@@ -1,10 +1,10 @@
 {
-  "status": "RUNNING",
+  "status": "DONE",
   "agent": "foreground",
   "mode": "foreground",
   "execution_surface": "foreground",
   "task_run_id": "task-run-20260804-112744-task-def-20260804-112737-readme-86778381-3a1056f6",
-  "generated_at": "2026-08-04T11:27:44+00:00",
+  "generated_at": "2026-08-04T11:29:13+00:00",
   "artifacts": [
     ".loom/tasks/task-20260804-112737-readme-b6401cb5/prompt.md",
     ".loom/tasks/task-20260804-112737-readme-b6401cb5/context.md",
@@ -34,9 +34,7 @@
       ".loom/tasks/task-20260804-112737-readme-b6401cb5/agent-events.jsonl",
       ".loom/tasks/task-20260804-112737-readme-b6401cb5/artifacts.json"
     ],
-    "work_products": [
-      "README.md"
-    ]
+    "work_products": []
   },
   "contract_snapshot": {
     "schema_version": 1,
