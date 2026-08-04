@@ -1,0 +1,20 @@
+{
+  "before": {
+    "available": true,
+    "branch_name": "develop",
+    "commit_sha": "4aef45fae982a9f8b2fe40f4fc96f18211194d79",
+    "dirty": true,
+    "staged_files": [],
+    "modified_files": [
+      ".loom/events.jsonl",
+      ".loom/job-runs/job-run-20260804-104514-job-20260804-103254-python-2983ddbb-57f90415/job-run.json",
+      ".loom/task-definitions/task-def-20260804-104232-readme-git-workflow-dcc87e0b/task-definition.json",
+      "AGENTS.md"
+    ],
+    "untracked_files": [
+      ".loom/task-runs/task-run-20260804-110833-task-def-20260804-104232-readme-git-workflow-dcc-067eaa1f/"
+    ],
+    "captured_at": "2026-08-04T11:08:33+00:00"
+  },
+  "after": null
+}
