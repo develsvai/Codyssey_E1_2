@@ -1,10 +1,10 @@
 {
-  "status": "RUNNING",
+  "status": "DONE",
   "agent": "foreground",
   "mode": "foreground",
   "execution_surface": "foreground",
   "task_run_id": "task-run-20260804-104514-task-def-20260804-104447-task-def-c9f1ad04-4093af90",
-  "generated_at": "2026-08-04T10:45:14+00:00",
+  "generated_at": "2026-08-04T10:47:45+00:00",
   "artifacts": [
     ".loom/tasks/task-20260804-104447-task-9a1837fe/prompt.md",
     ".loom/tasks/task-20260804-104447-task-9a1837fe/context.md",
@@ -34,12 +34,7 @@
       ".loom/tasks/task-20260804-104447-task-9a1837fe/agent-events.jsonl",
       ".loom/tasks/task-20260804-104447-task-9a1837fe/artifacts.json"
     ],
-    "work_products": [
-      "doc/architecture.md",
-      ".loom/memory/proposals/proposal-20260804-104625-proposal-85a42753.json",
-      ".loom/memory/audit/audit-20260804-104625-memory-proposal-created-4e0f6610.json",
-      ".loom/memory/docs-index.json"
-    ]
+    "work_products": []
   },
   "contract_snapshot": {
     "schema_version": 1,

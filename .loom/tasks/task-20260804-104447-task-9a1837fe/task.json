@@ -3,9 +3,9 @@
   "job_id": "job-20260804-103254-python-2983ddbb",
   "title": "현재 설계 구조 문서화와 미션 조건 재점검",
   "description": "현재 core/cli 분리 설계를 doc 아래 Markdown 문서로 고정하고, 미션 요구사항 대비 현재 충족/미충족 상태를 점검한다.",
-  "status": "RUNNING",
+  "status": "DONE",
   "created_at": "2026-08-04T10:44:47+00:00",
-  "updated_at": "2026-08-04T10:45:14+00:00",
+  "updated_at": "2026-08-04T10:47:45+00:00",
   "order_index": 5,
   "assigned_agent": "foreground",
   "depends_on": [
@@ -21,12 +21,24 @@
   "run_attempts": 0,
   "last_error": "",
   "commit_refs": [
-    "dd0c8bd8615b553ca02ccd624e9f58a5f8ef86c2"
+    "dd0c8bd8615b553ca02ccd624e9f58a5f8ef86c2",
+    "7e555074a89e34d3aea2166506615f2517b35090"
   ],
   "branch_name": "develop",
   "git_dirty": true,
-  "git_snapshot_captured_at": "2026-08-04T10:45:14+00:00",
-  "artifacts": [],
+  "git_snapshot_captured_at": "2026-08-04T10:47:45+00:00",
+  "artifacts": [
+    ".loom/tasks/task-20260804-104447-task-9a1837fe/agent-events.jsonl",
+    ".loom/tasks/task-20260804-104447-task-9a1837fe/artifacts.json",
+    ".loom/tasks/task-20260804-104447-task-9a1837fe/context.md",
+    ".loom/tasks/task-20260804-104447-task-9a1837fe/decision.md",
+    ".loom/tasks/task-20260804-104447-task-9a1837fe/git-snapshot.json",
+    ".loom/tasks/task-20260804-104447-task-9a1837fe/logs.txt",
+    ".loom/tasks/task-20260804-104447-task-9a1837fe/previous-results.md",
+    ".loom/tasks/task-20260804-104447-task-9a1837fe/prompt.md",
+    ".loom/tasks/task-20260804-104447-task-9a1837fe/result.md",
+    ".loom/tasks/task-20260804-104447-task-9a1837fe/troubleshooting.md"
+  ],
   "source_proposal_id": "",
   "source_prompt": ""
 }
