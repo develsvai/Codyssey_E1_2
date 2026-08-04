@@ -100,6 +100,30 @@ git pull origin develop
 - Git 이력: `git log --oneline --graph --decorate` 실행 결과
 - GitHub 증빙: 원격 저장소 URL, `develop` push 결과, 제출 기준 브랜치 병합 결과
 
+## 첨부된 제출 캡처
+
+현재 `doc/image/` 경로에 저장된 제출 증빙 캡처는 다음과 같다.
+
+### Git 이력 그래프
+
+`git log --oneline --graph --decorate` 실행 결과를 보여준다.
+
+![Git 이력 그래프](image/image.png)
+
+### `develop` 브랜치 push 성공
+
+README 수정 커밋 후 `git push origin develop`이 성공한 터미널 결과를 보여준다.
+
+![develop 브랜치 push 성공](<image/스크린샷 2026-08-04 오후 10.12.22.png>)
+
+### GitHub 병합 기록
+
+GitHub에서 `develop` 브랜치가 제출 기준 브랜치로 병합된 기록을 보여준다.
+
+![GitHub 병합 기록](<image/스크린샷 2026-08-04 오후 10.18.18.png>)
+
+주의: 이 문서를 보강하면서 새 커밋이 추가될 수 있으므로, 최종 제출 직전에는 최신 커밋까지 `push`한 뒤 필요한 화면을 한 번 더 확인한다.
+
 ## 사용자가 직접 수행해야 하는 항목
 
 - GitHub에 현재 `develop` 브랜치 push
