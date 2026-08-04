@@ -18,5 +18,18 @@
     ],
     "captured_at": "2026-08-04T11:13:56+00:00"
   },
-  "after": null
+  "after": {
+    "available": true,
+    "branch_name": "develop",
+    "commit_sha": "7a33bb04a2f92c2cf80ad27d866d151e9fbbb571",
+    "dirty": true,
+    "staged_files": [],
+    "modified_files": [
+      ".loom/job-runs/job-run-20260804-111356-job-20260804-103254-python-2983ddbb-b0f21b74/job-run.json",
+      ".loom/task-definitions/task-def-20260804-111349-task-def-71146819/task-definition.json",
+      "AGENTS.md"
+    ],
+    "untracked_files": [],
+    "captured_at": "2026-08-04T11:15:39+00:00"
+  }
 }
