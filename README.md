@@ -139,4 +139,4 @@ state.json  # 실행 중 생성되는 로컬 데이터 파일, Git에는 포함�
 
 ## 설계 문서
 
-현재 패키지 책임과 의존 방향은 [doc/architecture.md](doc/architecture.md)에 정리되어 있습니다. 제출 전 Git workflow와 스크린샷 준비 항목은 [doc/submission-checklist.md](doc/submission-checklist.md)를 참고합니다.
+현재 패키지 책임과 의존 방향은 [doc/architecture.md](doc/architecture.md)에 정리되어 있습니다. 과제 목표와 레포 구조의 연결 근거는 [doc/learning-objectives-rationale.md](doc/learning-objectives-rationale.md)를 참고합니다. 제출 전 Git workflow와 스크린샷 준비 항목은 [doc/submission-checklist.md](doc/submission-checklist.md)를 참고합니다.
