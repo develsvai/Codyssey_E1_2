@@ -1,0 +1,26 @@
+{
+  "id": "task-def-20260804-111349-task-def-71146819",
+  "job_definition_id": "job-20260804-103254-python-2983ddbb",
+  "title": "제출 문서 커밋 수 최신화",
+  "description": "README/Git workflow 정리 후 추가된 문서 및 Loom 완료 커밋으로 인해 제출 문서의 현재 커밋 수 표기가 실제 develop 커밋 수와 달라졌으므로 최신 값으로 갱신한다.",
+  "created_at": "2026-08-04T11:13:49+00:00",
+  "updated_at": "2026-08-04T11:15:39+00:00",
+  "order_index": 6,
+  "legacy_task_id": "task-20260804-111349-task-ba5a8f0b",
+  "depends_on": [
+    "task-def-20260804-104232-readme-git-workflow-dcc87e0b"
+  ],
+  "expected_output": "doc/architecture.md와 doc/submission-checklist.md의 현재 커밋 수가 실제 git rev-list --count HEAD 결과와 일치한다.",
+  "done_condition": "문서 숫자 갱신, git rev-list --count HEAD 확인, 문서 공백 검사, Loom 검증, 커밋이 완료되어 있다.",
+  "in_scope": "커밋 수 표기 최신화와 관련 Loom 기록",
+  "out_of_scope": "기능 코드 변경, GitHub push, clone/pull 실습, 스크린샷 촬영",
+  "validation_hint": "git rev-list --count HEAD와 문서 표기를 비교하고 git diff --check 및 loom validate --strict를 실행한다.",
+  "required_docs": [],
+  "memory_refs": [],
+  "default_agent": "foreground",
+  "context_policy_id": "",
+  "executor_policy_id": "",
+  "review_policy": "",
+  "source_proposal_id": "",
+  "source_prompt": ""
+}

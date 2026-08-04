@@ -1,0 +1,14 @@
+{
+  "id": "audit-20260804-104625-memory-proposal-created-4e0f6610",
+  "created_at": "2026-08-04T10:46:25+00:00",
+  "event_type": "MEMORY_PROPOSAL_CREATED",
+  "actor": "agent",
+  "source_type": "",
+  "source_id": "",
+  "target_type": "memory_proposal",
+  "target_id": "proposal-20260804-104625-proposal-85a42753",
+  "message": "설계 구조 문서를 구현 기준으로 유지",
+  "data": {
+    "suggested_type": "decision"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "task-run-20260804-110833-task-def-20260804-104232-readme-git-workflow-dcc-067eaa1f",
+  "job_run_id": "job-run-20260804-104514-job-20260804-103254-python-2983ddbb-57f90415",
+  "task_definition_id": "task-def-20260804-104232-readme-git-workflow-dcc87e0b",
+  "status": "DONE",
+  "created_at": "2026-08-04T11:08:33+00:00",
+  "updated_at": "2026-08-04T11:12:47+00:00",
+  "legacy_task_id": "task-20260804-104232-readme-git-workflow-cc418816",
+  "attempt": 1,
+  "assigned_agent": "foreground",
+  "worker_id": "",
+  "heartbeat_at": "",
+  "lease_expires_at": "",
+  "queued_at": "",
+  "started_at": "2026-08-04T11:08:33+00:00",
+  "completed_at": "2026-08-04T11:12:47+00:00",
+  "last_error": "",
+  "commit_refs": [
+    "19d49fce7b1171dc11016750155c9917a7d55fdd",
+    "4aef45fae982a9f8b2fe40f4fc96f18211194d79"
+  ],
+  "branch_name": "develop",
+  "git_dirty": true,
+  "git_snapshot_captured_at": "2026-08-04T11:12:47+00:00",
+  "artifacts": [
+    ".loom/tasks/task-20260804-104232-readme-git-workflow-cc418816/agent-events.jsonl",
+    ".loom/tasks/task-20260804-104232-readme-git-workflow-cc418816/artifacts.json",
+    ".loom/tasks/task-20260804-104232-readme-git-workflow-cc418816/context.md",
+    ".loom/tasks/task-20260804-104232-readme-git-workflow-cc418816/decision.md",
+    ".loom/tasks/task-20260804-104232-readme-git-workflow-cc418816/git-snapshot.json",
+    ".loom/tasks/task-20260804-104232-readme-git-workflow-cc418816/logs.txt",
+    ".loom/tasks/task-20260804-104232-readme-git-workflow-cc418816/previous-results.md",
+    ".loom/tasks/task-20260804-104232-readme-git-workflow-cc418816/prompt.md",
+    ".loom/tasks/task-20260804-104232-readme-git-workflow-cc418816/result.md",
+    ".loom/tasks/task-20260804-104232-readme-git-workflow-cc418816/troubleshooting.md"
+  ],
+  "checkpoint_ids": [
+    "checkpoint-20260804-111247-task-completed-readme-git-workflow-ae2b9507"
+  ],
+  "review_required_reason": ""
+}

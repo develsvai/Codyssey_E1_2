@@ -1,0 +1,26 @@
+{
+  "id": "task-def-20260804-104226-json-1f4f3621",
+  "job_definition_id": "job-20260804-103254-python-2983ddbb",
+  "title": "퀴즈 추가와 JSON 저장 안정화",
+  "description": "메뉴 2번에서 새 퀴즈를 입력받아 추가하고 state.json에 저장하며, 파일 없음/손상/입출력 오류에 대한 사용자 안내와 복구 흐름을 보강한다.",
+  "created_at": "2026-08-04T10:42:26+00:00",
+  "updated_at": "2026-08-04T11:07:46+00:00",
+  "order_index": 3,
+  "legacy_task_id": "task-20260804-104226-json-2c0b0c3b",
+  "depends_on": [
+    "task-def-20260804-104220-task-def-2a6bd0bd"
+  ],
+  "expected_output": "퀴즈 추가가 실제로 동작하고 프로그램 재시작 후 추가한 퀴즈와 최고 점수가 유지된다.",
+  "done_condition": "퀴즈 추가, 목록, 재시작 후 데이터 유지 흐름을 수동 검증하고 python3 -m compileall . 검증과 기능 단위 커밋이 남아 있다.",
+  "in_scope": "퀴즈 추가 입력, 선택지/정답 검증, state.json 저장/불러오기 오류 안내, 목록 확인 보강",
+  "out_of_scope": "GitHub clone/pull 실습, 제출 스크린샷 생성",
+  "validation_hint": "python3 main.py에서 2번으로 퀴즈를 추가한 뒤 종료/재실행하여 3번 목록에 반영되는지 확인한다.",
+  "required_docs": [],
+  "memory_refs": [],
+  "default_agent": "foreground",
+  "context_policy_id": "",
+  "executor_policy_id": "",
+  "review_policy": "",
+  "source_proposal_id": "",
+  "source_prompt": ""
+}

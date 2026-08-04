@@ -1,0 +1,33 @@
+{
+  "before": {
+    "available": true,
+    "branch_name": "develop",
+    "commit_sha": "83620dde89f6ff247a457123c29c85060e181208",
+    "dirty": true,
+    "staged_files": [],
+    "modified_files": [
+      ".loom/events.jsonl",
+      ".loom/job-runs/job-run-20260804-104514-job-20260804-103254-python-2983ddbb-57f90415/job-run.json",
+      ".loom/task-definitions/task-def-20260804-104220-task-def-2a6bd0bd/task-definition.json",
+      "AGENTS.md"
+    ],
+    "untracked_files": [
+      ".loom/task-runs/task-run-20260804-105119-task-def-20260804-104220-task-def-2a6bd0bd-e477ec51/"
+    ],
+    "captured_at": "2026-08-04T10:51:19+00:00"
+  },
+  "after": {
+    "available": true,
+    "branch_name": "develop",
+    "commit_sha": "3416c89f2e835796912a69518d6fb64d3b63b349",
+    "dirty": true,
+    "staged_files": [],
+    "modified_files": [
+      ".loom/job-runs/job-run-20260804-104514-job-20260804-103254-python-2983ddbb-57f90415/job-run.json",
+      ".loom/task-definitions/task-def-20260804-104220-task-def-2a6bd0bd/task-definition.json",
+      "AGENTS.md"
+    ],
+    "untracked_files": [],
+    "captured_at": "2026-08-04T10:53:42+00:00"
+  }
+}

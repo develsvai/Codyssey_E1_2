@@ -1,0 +1,42 @@
+{
+  "id": "task-20260804-103259-core-cli-1369300d",
+  "job_id": "job-20260804-103254-python-2983ddbb",
+  "title": "core/cli 분리 프로젝트 구조 잡기",
+  "description": "미션 요구사항을 바탕으로 core 하위에 모델, 게임 조율, 저장소 인터페이스/구현을 두고 cli 하위에 콘솔 진입 어댑터를 둔 초기 Python 구조를 만든다.",
+  "status": "DONE",
+  "created_at": "2026-08-04T10:32:59+00:00",
+  "updated_at": "2026-08-04T10:41:52+00:00",
+  "order_index": 1,
+  "assigned_agent": "foreground",
+  "depends_on": [],
+  "expected_output": "main.py, core 패키지, cli 패키지, .gitignore, README 초안이 생성되고 의존 방향이 cli -> core로 정리되어 있다.",
+  "done_condition": "python main.py가 실행 가능한 메뉴 골격을 보여주고, python -m compileall . 검증이 통과하며, 구조 생성 변경이 커밋되어 있다.",
+  "in_scope": "프로젝트 폴더 구조, 핵심 클래스/인터페이스 골격, CLI 엔트리포인트, README 초안, .gitignore",
+  "out_of_scope": "전체 퀴즈 플레이 기능 완성, GitHub clone/pull 실습, 스크린샷 제출물 생성",
+  "validation_hint": "python -m compileall . 및 python main.py의 기본 실행 흐름을 확인한다.",
+  "required_docs": [],
+  "memory_refs": [],
+  "run_attempts": 0,
+  "last_error": "",
+  "commit_refs": [
+    "b2784d456842a234e26b23e83cd831c3f4de6881",
+    "3eda701ac83785be442625b9df526b965c30239a"
+  ],
+  "branch_name": "develop",
+  "git_dirty": true,
+  "git_snapshot_captured_at": "2026-08-04T10:41:52+00:00",
+  "artifacts": [
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/agent-events.jsonl",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/artifacts.json",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/context.md",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/decision.md",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/git-snapshot.json",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/logs.txt",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/previous-results.md",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/prompt.md",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/result.md",
+    ".loom/tasks/task-20260804-103259-core-cli-1369300d/troubleshooting.md"
+  ],
+  "source_proposal_id": "",
+  "source_prompt": ""
+}

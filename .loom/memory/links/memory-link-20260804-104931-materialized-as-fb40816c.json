@@ -1,0 +1,10 @@
+{
+  "id": "memory-link-20260804-104931-materialized-as-fb40816c",
+  "created_at": "2026-08-04T10:49:31+00:00",
+  "source_type": "memory_proposal",
+  "source_id": "proposal-20260804-104625-proposal-85a42753",
+  "target_type": "active_memory",
+  "target_id": "memory-20260804-104931-memory-47cda9f4",
+  "relation": "materialized_as",
+  "metadata": {}
+}

@@ -1,0 +1,44 @@
+{
+  "id": "task-20260804-104226-json-2c0b0c3b",
+  "job_id": "job-20260804-103254-python-2983ddbb",
+  "title": "퀴즈 추가와 JSON 저장 안정화",
+  "description": "메뉴 2번에서 새 퀴즈를 입력받아 추가하고 state.json에 저장하며, 파일 없음/손상/입출력 오류에 대한 사용자 안내와 복구 흐름을 보강한다.",
+  "status": "DONE",
+  "created_at": "2026-08-04T10:42:26+00:00",
+  "updated_at": "2026-08-04T11:07:46+00:00",
+  "order_index": 3,
+  "assigned_agent": "foreground",
+  "depends_on": [
+    "task-20260804-104220-task-d1fd1c68"
+  ],
+  "expected_output": "퀴즈 추가가 실제로 동작하고 프로그램 재시작 후 추가한 퀴즈와 최고 점수가 유지된다.",
+  "done_condition": "퀴즈 추가, 목록, 재시작 후 데이터 유지 흐름을 수동 검증하고 python3 -m compileall . 검증과 기능 단위 커밋이 남아 있다.",
+  "in_scope": "퀴즈 추가 입력, 선택지/정답 검증, state.json 저장/불러오기 오류 안내, 목록 확인 보강",
+  "out_of_scope": "GitHub clone/pull 실습, 제출 스크린샷 생성",
+  "validation_hint": "python3 main.py에서 2번으로 퀴즈를 추가한 뒤 종료/재실행하여 3번 목록에 반영되는지 확인한다.",
+  "required_docs": [],
+  "memory_refs": [],
+  "run_attempts": 0,
+  "last_error": "",
+  "commit_refs": [
+    "dbbaea5a4c784ab47197b3feca05ef4a5b2c1be5",
+    "3d892d8498133d62c4ff206fe05d0d58929b6034"
+  ],
+  "branch_name": "develop",
+  "git_dirty": true,
+  "git_snapshot_captured_at": "2026-08-04T11:07:46+00:00",
+  "artifacts": [
+    ".loom/tasks/task-20260804-104226-json-2c0b0c3b/agent-events.jsonl",
+    ".loom/tasks/task-20260804-104226-json-2c0b0c3b/artifacts.json",
+    ".loom/tasks/task-20260804-104226-json-2c0b0c3b/context.md",
+    ".loom/tasks/task-20260804-104226-json-2c0b0c3b/decision.md",
+    ".loom/tasks/task-20260804-104226-json-2c0b0c3b/git-snapshot.json",
+    ".loom/tasks/task-20260804-104226-json-2c0b0c3b/logs.txt",
+    ".loom/tasks/task-20260804-104226-json-2c0b0c3b/previous-results.md",
+    ".loom/tasks/task-20260804-104226-json-2c0b0c3b/prompt.md",
+    ".loom/tasks/task-20260804-104226-json-2c0b0c3b/result.md",
+    ".loom/tasks/task-20260804-104226-json-2c0b0c3b/troubleshooting.md"
+  ],
+  "source_proposal_id": "",
+  "source_prompt": ""
+}
