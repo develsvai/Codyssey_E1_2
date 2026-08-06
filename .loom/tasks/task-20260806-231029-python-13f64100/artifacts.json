@@ -1,10 +1,10 @@
 {
-  "status": "RUNNING",
+  "status": "DONE",
   "agent": "codex",
   "mode": "foreground",
   "execution_surface": "foreground",
   "task_run_id": "task-run-20260806-231032-task-def-20260806-231029-python-e33f0f96-28a0bb14",
-  "generated_at": "2026-08-06T23:10:32+00:00",
+  "generated_at": "2026-08-06T23:50:14+00:00",
   "artifacts": [
     ".loom/tasks/task-20260806-231029-python-13f64100/prompt.md",
     ".loom/tasks/task-20260806-231029-python-13f64100/context.md",
@@ -15,9 +15,7 @@
     ".loom/tasks/task-20260806-231029-python-13f64100/troubleshooting.md",
     ".loom/tasks/task-20260806-231029-python-13f64100/logs.txt",
     ".loom/tasks/task-20260806-231029-python-13f64100/agent-events.jsonl",
-    ".loom/tasks/task-20260806-231029-python-13f64100/artifacts.json",
-    "README.md",
-    "doc/python-exam-summary.md"
+    ".loom/tasks/task-20260806-231029-python-13f64100/artifacts.json"
   ],
   "artifact_groups": {
     "user_outputs": [
@@ -36,10 +34,7 @@
       ".loom/tasks/task-20260806-231029-python-13f64100/agent-events.jsonl",
       ".loom/tasks/task-20260806-231029-python-13f64100/artifacts.json"
     ],
-    "work_products": [
-      "README.md",
-      "doc/python-exam-summary.md"
-    ]
+    "work_products": []
   },
   "contract_snapshot": {
     "schema_version": 1,

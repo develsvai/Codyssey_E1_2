@@ -2,3 +2,4 @@
 [2026-08-06T23:12:00+00:00] agent=codex 기존 README, 학습 목표 문서, core/cli 구현 파일을 확인했다.
 [2026-08-06T23:15:00+00:00] agent=codex doc/python-exam-summary.md를 추가하고 README 파일 구조와 설계 문서 링크를 갱신했다.
 [2026-08-06T23:17:00+00:00] agent=codex rg 링크 확인, git diff --check, loom validate --strict 검증을 통과했다.
+[2026-08-06T23:50:14+00:00] agent=codex task=task-20260806-231029-python-13f64100 Python 시험 대비 총정리 문서를 추가하고 README 링크를 반영했다.
