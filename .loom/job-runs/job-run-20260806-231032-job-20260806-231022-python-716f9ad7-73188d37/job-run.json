@@ -1,0 +1,14 @@
+{
+  "id": "job-run-20260806-231032-job-20260806-231022-python-716f9ad7-73188d37",
+  "job_definition_id": "job-20260806-231022-python-716f9ad7",
+  "status": "DONE",
+  "created_at": "2026-08-06T23:10:32+00:00",
+  "updated_at": "2026-08-06T23:50:14+00:00",
+  "legacy_job_id": "job-20260806-231022-python-716f9ad7",
+  "started_at": "2026-08-06T23:10:32+00:00",
+  "completed_at": "2026-08-06T23:50:14+00:00",
+  "trigger_mode": "manual",
+  "trigger_ref": "",
+  "worker_pool": "",
+  "last_error": ""
+}

@@ -1,0 +1,19 @@
+{
+  "id": "checkpoint-20260804-130255-task-completed-fail-f12ff3c9",
+  "created_at": "2026-08-04T13:02:55+00:00",
+  "reason": "Task completed: 평가 FAIL 항목 빠른 보강",
+  "summary": "평가 FAIL 항목 빠른 보강 -> DONE @ develop/13057537c64b",
+  "job_id": "job-20260804-103254-python-2983ddbb",
+  "task_id": "task-20260804-125907-fail-0bbb142d",
+  "commit_sha": "13057537c64b01247bc4c87ad15815d1315c14b7",
+  "branch_name": "develop",
+  "dirty": true,
+  "staged_files": [],
+  "modified_files": [
+    ".loom/job-runs/job-run-20260804-125910-job-20260804-103254-python-2983ddbb-7d6a1037/job-run.json",
+    ".loom/task-definitions/task-def-20260804-125907-fail-d13ab85c/task-definition.json"
+  ],
+  "untracked_files": [],
+  "snapshot_captured_at": "2026-08-04T13:02:55+00:00",
+  "rollback_strategy": "revert-or-branch"
+}

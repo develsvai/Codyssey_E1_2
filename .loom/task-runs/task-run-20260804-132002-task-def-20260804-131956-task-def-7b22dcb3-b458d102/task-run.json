@@ -1,0 +1,41 @@
+{
+  "id": "task-run-20260804-132002-task-def-20260804-131956-task-def-7b22dcb3-b458d102",
+  "job_run_id": "job-run-20260804-132002-job-20260804-103254-python-2983ddbb-5be8cb08",
+  "task_definition_id": "task-def-20260804-131956-task-def-7b22dcb3",
+  "status": "DONE",
+  "created_at": "2026-08-04T13:20:02+00:00",
+  "updated_at": "2026-08-04T13:21:58+00:00",
+  "legacy_task_id": "task-20260804-131956-task-40517e0b",
+  "attempt": 1,
+  "assigned_agent": "foreground",
+  "worker_id": "",
+  "heartbeat_at": "",
+  "lease_expires_at": "",
+  "queued_at": "",
+  "started_at": "2026-08-04T13:20:02+00:00",
+  "completed_at": "2026-08-04T13:21:58+00:00",
+  "last_error": "",
+  "commit_refs": [
+    "3a012fb2cbe0797edacb7144b3b726410e305c2f",
+    "c63b702834021b43d1d621e0606327b1a03e70c9"
+  ],
+  "branch_name": "develop",
+  "git_dirty": true,
+  "git_snapshot_captured_at": "2026-08-04T13:21:58+00:00",
+  "artifacts": [
+    ".loom/tasks/task-20260804-131956-task-40517e0b/agent-events.jsonl",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/artifacts.json",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/context.md",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/decision.md",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/git-snapshot.json",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/logs.txt",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/previous-results.md",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/prompt.md",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/result.md",
+    ".loom/tasks/task-20260804-131956-task-40517e0b/troubleshooting.md"
+  ],
+  "checkpoint_ids": [
+    "checkpoint-20260804-132158-task-completed-13542ae6"
+  ],
+  "review_required_reason": ""
+}

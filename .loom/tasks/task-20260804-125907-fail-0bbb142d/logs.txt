@@ -1,0 +1,2 @@
+[2026-08-04T12:59:10+00:00] agent=foreground task=task-20260804-125907-fail-0bbb142d Foreground task session started.
+[2026-08-04T13:02:55+00:00] agent=foreground task=task-20260804-125907-fail-0bbb142d Foreground task session completed.
